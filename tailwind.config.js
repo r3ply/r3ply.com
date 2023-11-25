@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {},
     backgroundImage: {
-      'beams-dark': 'url("/beams.webp"), linear-gradient(#0D172B, #12213F)',
-      'beams-light': 'url("/beams.webp"), linear-gradient(#CDFFF9, #FFDCDF)',
-    }
+      'bottle-light': 'url("/bottle-light.jpg")',
+    },
+    fontFamily: {
+      'playfair-display': ['Playfair Display', 'serif'],
+      'academy-engraved': ['Academy Engraved LET', 'serif'],
+      'fira-sans': ['Fira Sans', 'sans-serif']
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
