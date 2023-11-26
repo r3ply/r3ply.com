@@ -33,7 +33,7 @@ To see a demo of r3ply, and learn more about how it works, check out the [the po
 
 ## FAQ:
 
-Below are some commonly asked questions. Feel free to ask for more details to anything not explained here.
+Until there's documentation, I will add common questions/answers here. Feel free to [comment](https://spenc.es/writing/email-as-a-commenting-system/#comments) if you have any questions, or to [contact me](https://spenc.es/contact/) directly.
 
 <div class="px-4 border border-[#020D2B] rounded-xl">
 
@@ -41,19 +41,16 @@ Below are some commonly asked questions. Feel free to ask for more details to an
 Emails addresses are automatically converted to private but unique hashes before comments are published.
 
 ### How do I integrate r3ply with my at site?
-You can configure how you want comments to enter your site’s pipeline. r3ply offers some integrations already, with more on the way, but you can also easily author your own and expose  a webhook.
-
-### What integrations exist at this moment?
-I currently use a flow where comments are added via GitHub. This works well for static sites, but dynamic sites would be even easier.
+For the time being, I just just have a GitHub "integration" built, for my own site's needs, however in the future further integrations can be built and you can also easily author your own and expose a webhook.
 
 ### How does content moderation work?
 If moderation is enabled, site owners will be notified when new comments have been received, where they can approve or reject submissions, as well as block malicious users.
 
 ### Where does r3ply run?
-The inbound email portion of r3ply currently uses cloudflare’s email workers to run. Its resource requirements fits comfortably within their free tier.
+The inbound email portion of r3ply currently uses [Cloudflare’s email workers](https://workers.cloudflare.com) to run. Its resource requirements fits comfortably within their free tier.
 
 ### What if I want to run r3ply on my own infrastructure?
-If you want to bring r3ply to some other infrastructure then great! Submit an issue and let’s talk more about it.
+If you want to bring r3ply to some other infrastructure then great! [contact me](https://spenc.es/contact/) and let’s talk more about it.
 
 ### Is there a managed version of it?
 Currently no, but if it becomes popular then maybe a service could be made out of it.
@@ -64,18 +61,22 @@ r3ply uses information in the subject line of the email to embed where a comment
 ### How does this subject line get in the email to begin with?
 When the use clicks a “comment” button, they’re actually clicking a mailto link that pre-populates the necessary information.
 
+### What is included in the mailto links?
+It includes the sender, as well as instructions that are in the email body. However, most importantly is the subject line which includes what the comment is replying as well as hash designed to prevent tampering.
+
 ### How does this mailto link get generated?
 Your site needs to build it.
 
 ### What prevents a malicious user from tampering with the subject line?
 r3ply will compare a hash of the subject line to a precomputed one, and if they differ it will reject the email.
 
-### How does users sending an email help with moderation?
-Because if they spam or are otherwise malicious that email address can be blocked.
+### How do emails help with moderation?
+Because if users spam or are otherwise malicious then their email address can be blocked.
 
 ### Can’t they just use another email address?
 Yes, but then that one can be blocked too, and using multiple email addresses is a problem for traditional account signups as well.
 
 ### Do users receive a notification that their comment was successfully submitted?
 Yes, currently r3ply will auto reply to their email notifying them that their comment has been received.
+
 </div>
