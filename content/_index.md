@@ -8,9 +8,9 @@ description = "r3ply makes adding comments to your website as simple as sending 
 
 r3ply makes adding comments to your website easy by allowing your readers to submit them via email. This allows readers to comment with signing up for, yet another, account, while also allowing site's to moderate their content.
 
-I made r3ply because I wanted to a commenting system for [my own website](/todo) that was flexible for myself and my site's visitors. r3ply integrates well with both static and dynamic website sites.
+I made r3ply because I wanted to a commenting system for [my own website](https://spenc.es/) that was flexible for myself and my site's visitors. r3ply integrates well with both static and dynamic website sites.
 
-To see a demo of r3ply, and learn more about how it works, check out the [the post](/todo) where I introduce it.
+To see a demo of r3ply, and learn more about how it works, check out the [the post](https://spenc.es/writing/email-as-a-commenting-system/) where I introduce it.
 
 ## Features:
 * User's can submit comments to your site via email
