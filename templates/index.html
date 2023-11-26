@@ -63,7 +63,7 @@
           </ul>
         </nav>
       </div>
-      <img class="w-full border-t md:border border-[#111D3D]" src="bottle-light_v.webp">
+      <img class="w-full border-t md:border border-[#020D2B]" src="bottle-light_v.webp">
       {# <img class="hidden lg:inline w-full" src="bottle-light_h.webp" alt=""> #}
     </header>
     <article id="pitch" class="mt-8 mx-auto px-4 prose
@@ -72,25 +72,26 @@
     prose-h3:text-blue-400
     text-[#1E2D57]
     leading-snug
+    prose-img:rounded-xl prose-img:border prose-img:border-[#020D2B]
     ">
       {{ section.content | safe }}
     </article>
   </main>
-
-  {# Basic footer #}
-  <footer class="hidden flex flex-col mt-4 bg-white/5 border-t border-blue-300">
-    {# <hr class="border-blue-300"> #}
-    <ul class="flex mx-auto py-12 text-gray-200 gap-2">
-      <li>
-        <p>Project <a href="{{ config.extra.author.website }}" class="text-yellow-100">
-            by {{ config.extra.author.name }}</a>
-        </p>
-      </li>
-      <li>|</li>
-      <li>
-        <p>Fork it <a href="{{ config.extra.project_gh }}" class="text-yellow-100"> on GitHUb </a></p>
-      </li>
-    </ul>
+  <footer class="mt-24 border-t border-[#020D2B]">
+    <div class="px-4 py-2 flex items-center max-w-prose mx-auto">
+      <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-playfair-display font-semibold">
+        <a href="https://r3ply.com">r<span class=" font-academy-engraved font-normal">3</span>ply<span
+            class=" font-academy-engraved font-normal">.</span>
+        </a>
+      </h1>
+      <nav class="ml-auto">
+        <ul class="flex overflow-clip gap-1 md:gap-4 list-none text-xs">
+          <li><a class="hover:border-b border-red-400" href="https://spenc.es/">About Me</a></li>
+          <li class=" font-extralight">┆</li>
+          <li><a class="hover:border-b border-red-400" href="https://spenc.es/">r3ply Demo</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 </body>
 
