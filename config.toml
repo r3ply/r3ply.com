@@ -1,6 +1,5 @@
-# The URL the site will be built for
-# The base URL of the site; the only required configuration variable.
-base_url = "example.com"
+# Note: this is changed via the BUILD_OPTS env var, e.g. BUILD_OPTS="--base-url $CF_PAGES_URL"
+base_url = "localhost"
 
 # The site title and description; used in feeds by default.
 title = "🪩 Zola + Tailwind CSS: because they deserve to be together 💅"
@@ -99,14 +98,10 @@ smart_punctuation = false
 # Configuration of the link checker.
 [link_checker]
 # Skip link checking for external URLs that start with these prefixes
-skip_prefixes = [
-    "http://[2001:db8::]/",
-]
+skip_prefixes = ["http://[2001:db8::]/"]
 
 # Skip anchor checking for external URLs that start with these prefixes
-skip_anchor_prefixes = [
-    "https://caniuse.com/",
-]
+skip_anchor_prefixes = ["https://caniuse.com/"]
 
 # Treat internal link problems as either "error" or "warn", default is "error"
 internal_level = "error"
