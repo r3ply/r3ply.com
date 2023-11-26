@@ -4,49 +4,38 @@ title = "📬 r3ply: comment submissions via email"
 description = "r3ply makes adding comments to your website as simple as sending an email."
 +++
 
-## A commenting system as simple as email
+## A Commenting System as Simple as Email
 
-r3ply makes adding commenting system to your website easy by allowing your readers to submit their comments via email. This website is meant to demo the concept and solicit feedback from the internet before I take the next steps of open sourcing the code.
+r3ply makes adding comments to your website easy by allowing your readers to submit them via email. This allows readers to comment with signing up for, yet another, account, while also allowing site's to moderate their content.
 
-I made r3ply because I wanted to add a commenting system to my site that didn’t require people to sign up for an account, while still allowing for content moderation. r3ply integrates well with both static and dynamic website sites.
+I made r3ply because I wanted to a commenting system for [my own website](/todo) that was flexible for myself and my site's visitors. r3ply integrates well with both static and dynamic website sites.
 
-Once I’ve iterated on the feedback I receive here, r3ply will be made free and licensed as open source! In the meanwhile, read on to learn more about its features and how it works. Or just scroll to the bottom to try it out try it out yourself.
-
-And if you have any questions or feedback, just leave a comment!
-
-## Table of Contents
-
-* How it works
-* Features
-* Why email?
-* FAQ
-* Questions or Comments?
-
-## How it works:
-
-1. A site visitor clicks “comment” which begins a draft in their email
-2. When they’re ready they just hit send
-3. Done! The comment is enqueued to become html on your site.
+To see a demo of r3ply, and learn more about how it works, check out the [the post](/todo) where I introduce it.
 
 ## Features:
-1. Comments can be configured to require approval before going live
-2. Tasks like content moderation or editing can be done from within email thread
-3. Modular system allows r3ply to work with any backend or build system. Works great with static sites!
+* User's can submit comments to your site via email
+* Email addresses are automatically redacted before being published
+* Comments can be reviewed before they going live
+* Modular design means bring your own build (or backend)
 
 [Embedded video]
 
-## Benefits to r3ply:
-1. Email is something everyone already has, providing an easy way to receive comments with requiring signup
-2. Allows for a good balance between good user experience while also  preventing spam or offensive content
-3. You get for free a lot of useful features right out of the box, like drafts but also much more!
+## Benefits:
+1. Everyone already has email!
+2. Good balance between UX and moderating spam or offensive content
+3. Email gives you for free a lot of useful features that you don't have to build:
+    * Draft comments that can be saved and resumed later
+    * Comment history in the form of their archive
+    * Emails are naturally threaded
+    * A robust text editor that's already battle tested
+    * Some degree of prebuilt spam detection
+    * Users can scroll through content while they prepare their draft
 
 ## FAQ:
 
 Below are some commonly asked questions. Feel free to ask for more details to anything not explained here.
 
-<details class="pt-6 px-4 open:border border-[#020D2B] rounded-xl">
-
-<summary class="hover:cursor-pointer">Click to expand</summary>
+<div class="px-4 border border-[#020D2B] rounded-xl">
 
 ### What about privacy?
 Emails addresses are automatically converted to private but unique hashes before comments are published.
@@ -89,8 +78,4 @@ Yes, but then that one can be blocked too, and using multiple email addresses is
 
 ### Do users receive a notification that their comment was successfully submitted?
 Yes, currently r3ply will auto reply to their email notifying them that their comment has been received.
-</details>
-
-## Comments
-
-[comments]
+</div>

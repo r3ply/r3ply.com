@@ -4,12 +4,11 @@ module.exports = {
   theme: {
     extend: {},
     backgroundImage: {
-      'bottle-light': 'url("/bottle-light.jpg")',
+      'bottle-light_h': 'url("/bottle-light_h.webp")',
     },
     fontFamily: {
       'playfair-display': ['Playfair Display', 'serif'],
       'academy-engraved': ['Academy Engraved LET', 'serif'],
-      'fira-sans': ['Fira Sans', 'sans-serif']
     },
   },
   plugins: [

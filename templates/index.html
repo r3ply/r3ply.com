@@ -41,21 +41,35 @@
 
 </head>
 
-<body class="bg-[#020D2B]">
-
+<body class="bg-[#FDF2D4] text-[#111D3D]">
   {# Basic content #}
-  <main class="bg-[#FDF2D4] max-w-md mx-auto">
+  <main class="max-w-prose mx-auto">
     <header class="">
-      <h1 class="pt-12 pl-8 text-5xl text-[#111D3D] font-playfair-display font-semibold">r<span
-          class=" font-academy-engraved font-normal">3</span>ply<span
-          class=" font-academy-engraved font-normal">.</span></h1>
-      <img class="w-full" src="bottle-light.webp">
+      <div class="mx-2 md:mx-0 flex items-center">
+        <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-playfair-display font-semibold">
+          <a href="https://r3ply.com">r<span class=" font-academy-engraved font-normal">3</span>ply<span
+              class=" font-academy-engraved font-normal">.</span>
+          </a>
+        </h1>
+        <nav class="ml-auto">
+          <ul class="flex overflow-clip gap-1 md:gap-4 list-none text-xs">
+            <li><a class="hover:border-b border-red-400" href="#pitch">Pitch</a></li>
+            <li class=" font-extralight">┆</li>
+            <li><a class="hover:border-b border-red-400" href="#features">Features</a></li>
+            <li class=" font-extralight">┆</li>
+            <li><a class="hover:border-b border-red-400" href="#benefits">Benefits</a></li>
+            <li class=" font-extralight">┆</li>
+            <li><a class="hover:border-b border-red-400" href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img class="w-full border-t md:border border-[#111D3D]" src="bottle-light_v.webp">
+      {# <img class="hidden lg:inline w-full" src="bottle-light_h.webp" alt=""> #}
     </header>
-    <article class="mt-8 mx-auto px-4 prose prose-xl
+    <article id="pitch" class="mt-8 mx-auto px-4 prose
     prose-headings:font-playfair-display
     prose-h2:text-[#FB7B87]
     prose-h3:text-blue-400
-    font-fira-sans font-medium
     text-[#1E2D57]
     leading-snug
     ">
