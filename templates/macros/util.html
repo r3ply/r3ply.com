@@ -1,0 +1,29 @@
+{# This macro will provide the canonical URL if running in production, see 'private' below #}
+{%- macro cf_url_to_canonical() -%}
+{{ self::cf_url_to_canonical_private() | trim }}
+{%- endmacro  -%}
+
+{# Note: 'private' because this macro leaves space, so it's trimmed in the 'public' version #}
+{% macro cf_url_to_canonical_private() %}
+{# https://developers.cloudflare.com/pages/platform/build-configuration/#environment-variables #}
+{% set CF_PAGES = get_env(name="CF_PAGES", default="0") %}
+
+{# If in cloudflare environment #}
+{% if CF_PAGES == "1" %}
+
+{# If git branch is 'main' (see config.toml), return canonical url #}
+{% if get_env(name="CF_PAGES_BRANCH") == config.extra.main_branch %}
+{{ config.extra.canonical_url }}
+
+{# Otherwise return cloudflare provided URL#}
+{% else %}
+{{ get_env(name="CF_PAGES_URL") }}
+{% endif %}
+{% endif %}
+
+{# Macro returns `base_url` if not in cloudflare environment #}
+{% if CF_PAGES != "1" %}
+{{ config.base_url }}
+{% endif %}
+
+{% endmacro %}

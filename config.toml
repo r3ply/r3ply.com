@@ -170,8 +170,5 @@ index_format = "elasticlunr_javascript"
 # author value will be available using {{ config.extra.author }} in templates
 #
 [extra]
-project_gh = "https://github.com/asimpletune/zola-tailwindcss"
-
-[extra.author]
-name = "Spence"
-website = "https://spenc.es"
+main_branch = "main"
+canonical_url = "https://r3ply.com"
