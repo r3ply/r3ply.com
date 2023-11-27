@@ -2,8 +2,8 @@
 base_url = "localhost"
 
 # The site title and description; used in feeds by default.
-title = "🪩 Zola + Tailwind CSS: because they deserve to be together 💅"
-description = "A GitHub template for making projects with the Zola static site generator + Tailwind CSS: 🪜 + 🎨"
+title = "r3ply 📬: commenting, as simple as email"
+description = "🪄 Add comments 💬 to your website easily ✨ with r3ply, the email 📥 based commenting system 🎉"
 
 # The default language; used in feeds.
 default_language = "en"
