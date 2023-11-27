@@ -40,6 +40,9 @@ Until there's documentation, I will add common questions/answers here. Feel free
 ### What about privacy?
 Emails addresses are automatically converted to private but unique hashes before comments are published.
 
+### Can people choose a "nickname" to associate with a comment?
+In the future, maybe. I'm thinking about adding a feature that will allow people to optionally sign their emails with a nickname they'd like shown next to their comment.
+
 ### How do I integrate r3ply with my at site?
 For the time being, I just just have a GitHub "integration" built, for my own site's needs, however in the future further integrations can be built and you can also easily author your own and expose a webhook.
 
