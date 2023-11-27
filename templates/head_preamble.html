@@ -8,20 +8,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 {# These tags are for the previews that are generated when the website is shared, e.g. on iMessage, WhatsApp, twitter, etc... #}
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="{{ domain ~ current_path }}">
+<!-- Facebook/Whatsapp OG Tags -->
 <meta property="og:type" content="website">
+<meta property="og:url" content="{{ domain ~ current_path }}">
 <meta property="og:title" content="{{ section.title }}">
-<meta property=" og:description" content="{{ section.description }}">
-<meta property="og:image" content="/bottle_banner.webp">
+<meta property="og:description" content="{{ section.description }}">
+{% block meta_social_media_preview_img %} {# Note: Override this block if you need to #}
+<meta property="og:image" content="{{ domain ~ '/bottle_banner.webp'}}">{# Note: < 300KB #}
+{% endblock meta_social_media_preview_img %}
+<meta property="og:image:width" content="1170"> {# minimum dimensions of 300 x 200  #}
+<meta property="og:image:height" content="586">
+<meta property="og:locale" content="en_US">
 
-<!-- Twitter Meta Tags -->
+<!-- Twitter OG Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:domain" content="r3ply.com">
 <meta property="twitter:url" content="{{ domain ~ current_path }}">
 <meta name="twitter:title" content="{{ section.title }}">
 <meta name="twitter:description" content="{{ section.description }}">
-<meta name="twitter:image" content="/bottle_banner.webp">
+{% block twitter_social_media_preview_img %} {# Note: Override this block if you need to #}
+<meta property="og:image" content="{{ domain ~ '/bottle_banner.webp'}}"> {# Note: < 300KB #}
+{% endblock twitter_social_media_preview_img %}
 
 <!--  Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -30,12 +37,3 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5684FF">
 <meta name="msapplication-TileColor" content="#5684FF">
-
-<meta property="og:title" content="{{ section.title }}">{# Note: Maximum 35 characters #}
-<meta property="og:type" content="website"> {# Note: List of the global types available: http://ogp.me/#types #}
-<meta property="og:locale" content="en_US">
-<meta property="og:url" content="{{ domain ~ current_path }}">
-<meta property="og:description" content="{{ section.description}}"> {# Note: Maximum 65 characters #}
-<meta property="og:image" content="/bottle_banner.webp"> {# Note: jpg or png < 300KB #}
-<meta property="og:image:width" content="600"> {# minimum dimensions of 300 x 200  #}
-<meta property="og:image:height" content="315">

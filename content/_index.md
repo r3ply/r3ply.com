@@ -1,7 +1,7 @@
 +++
 template = "index.html"
 title = "r3ply 📬: commenting, as simple as email"
-description = "🪄 Add comments 💬 to your website easily ✨ with r3ply, the email 📥 based commenting system 🎉"
+description = "💬 Add comments to your website easily ✨ with r3ply, the email based commenting system 📥"
 +++
 
 ## A Commenting System as Simple as Email
