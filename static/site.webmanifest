@@ -1,14 +1,14 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "r3ply",
+    "short_name": "r3ply",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png?v=2",
+            "src": "/android-chrome-192x192.png?v=4",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png?v=2",
+            "src": "/android-chrome-512x512.png?v=4",
             "sizes": "512x512",
             "type": "image/png"
         }
