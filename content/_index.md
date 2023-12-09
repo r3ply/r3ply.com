@@ -41,7 +41,7 @@ Currently I'm asking the internet for feedback to see if it's worth open sourcin
 <div class="px-4 border border-[#020D2B] rounded-xl">
 
 ### What is the timeline for this project?
-r3ply **works today** and you can [demo it](https://spenc.es/writing/email-as-a-commenting-system/#comments) today. However, I'm still waiting to get feedback before open sourcing the project.
+r3ply **works today** and you can [demo it](https://spenc.es/writing/email-as-a-commenting-system/#comments) now. However, I'm still waiting to get feedback before open sourcing the project.
 
 Who knows? Maybe people will think it's the worst thing ever, and no-one would ever use it. If that's the case, then I can save myself the trouble. If it's positively received though, then I'll open source the code, and future development will happen in public.
 
@@ -49,14 +49,14 @@ Who knows? Maybe people will think it's the worst thing ever, and no-one would e
 Emails addresses are automatically converted to private but unique hashes before comments are published.
 
 ### What about email "spoofing"?
-r3ply performs `dkim`, `dmarc`, and `dkim` checks against the sender's email address, and includes a checkmark if they pass.
+r3ply performs `dkim`, `dmarc`, and `spf` checks against the sender's email address, and includes a checkmark if they pass.
 
 ### Can people choose a "nickname" to associate with a comment?
 In the future, maybe.
 
 I actually have this implemented, but not released, where it parses a nickname from the email's "signature". That feels elegant, but I still think a nickname needs to be more intentional to be a good UX.
 
-Basically I'm worried people won't know they're leaving a nickname, and a very direct 'opt-in' is required in my mind, as practically everyone's people's email clients will automatically include some kind of signature.
+Basically I'm worried people won't know they're leaving a nickname, and I'm worried about being perceived as breaking that trust. This is true especially because practically everyone's email clients will automatically include some kind of signature.
 
 ### What content can be submitted in the emails?
 Personally, I allow a subset of markdown, but that would be up to you as the site moderator. r3ply can be configured however to reject emails that go beyond a certain threshold, in terms of size.
@@ -101,7 +101,7 @@ When the user clicks a “comment” button, they’re actually clicking a mailt
 r3ply will compare a hash of the subject line to a precomputed one, and if they differ it will reject the email.
 
 ### What is included in the `mailto` links?
-It includes the sender, as well as instructions that are in the email body. However, most importantly is the subject line which includes what the comment is replying as well as a hash to prevent accidents or tampering.
+It includes the sender, as well as instructions that are in the email body. However, most importantly is the subject line which includes what the comment is replying to, as well as a hash to prevent accidents or tampering.
 
 ### How does this `mailto` link get generated?
 Your site needs to build it, since only your site knows where comments should go in the HTML.
