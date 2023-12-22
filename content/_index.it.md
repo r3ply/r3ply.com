@@ -12,7 +12,7 @@ Ho creato r3ply perché volevo un sistema di commenti per [il mio sito web](http
 
 Per vedere una demo di r3ply e saperne di più su come funziona, controlla [il post](https://spenc.es/writing/email-as-a-commenting-system/) in cui lo presento.
 
-## Caratteristiche:
+## Funzioni:
 * Gli utenti possono inviare commenti al tuo sito via email
 * Gli indirizzi email vengono automaticamente oscurati prima della pubblicazione
 * I commenti possono essere revisionati prima di essere pubblicati
