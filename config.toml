@@ -166,7 +166,7 @@ r3ply_demo = "r3ply Demo"
 # build_search_index = false
 [languages.it.translations]
 languages = "lingue"
-about = "informazioni"
+about = "info."
 features = "funzionalità"
 benefits = "vantaggi"
 about_me = "Su di me"
