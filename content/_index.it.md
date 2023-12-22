@@ -54,9 +54,9 @@ r3ply esegue controlli `dkim`, `dmarc`, e `spf` sull'indirizzo email del mittent
 ### Le persone possono scegliere un "nickname" da associare a un commento?
 In futuro, forse.
 
-In realtà ho implementato questo, ma non l'ho ancora rilasciato, dove analizza un nickname dalla "firma" dell'email. Questo sembra elegante, ma penso ancora che un nickname debba essere più intenzionale per essere un buon UX.
+In realtà ho implementato questo, ma non l'ho ancora rilasciato, dove analizza un nickname dalla "firma" dell'email. Quest'idea sembra elegante, ma penso ancora che un nickname debba essere più intenzionale per essere un buon UX.
 
-In sostanza, temo che le persone non sapranno di lasciare un nickname e temo di essere percepito come una rottura di quella fiducia. Questo è vero soprattutto perché praticamente tutti i client email includono automaticamente qualche tipo di firma.
+In sostanza, sono preoccupato che le persone non sapranno che stanno lasciando un soprannome e temo di essere visto come colui che tradisce quella fiducia. Questo è vero soprattutto perché praticamente tutti i client email includono automaticamente qualche tipo di firma.
 
 ### Che tipo di contenuto può essere inviato nelle email?
 Personalmente, permetto un sottoinsieme di markdown, ma spetta a te come moderatore del sito. r3ply può essere configurato per rifiutare le email che superano una certa soglia in termini di dimensioni.
@@ -88,7 +88,7 @@ La parte di email in ingresso di r3ply attualmente utilizza [Cloudflare’s emai
 ### E se voglio eseguire r3ply sulla mia infrastruttura?
 Se desideri portare r3ply su un'altra infrastruttura, ottimo! [Contattami](https://spenc.es/contact/) e parliamone di più.
 
-### C'è una versione gestita di esso?
+### C'è una versione gestita di questo?
 Attualmente no, ma se diventa popolare potrebbe essere creata un servizio basato su di esso.
 
 ### Come fa r3ply a sapere da un'email dove dovrebbe andare un commento sul mio sito?
