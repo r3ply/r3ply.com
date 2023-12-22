@@ -34,19 +34,25 @@
         </h1>
         <nav class="ml-auto">
           <ul class="flex overflow-clip gap-1 md:gap-4 list-none text-xs">
-            <li><a class="hover:border-b border-red-400" href="#pitch">Pitch</a></li>
+            <li><a class="hover:border-b border-red-400" href="#about">{{trans(key="about", lang=lang) | title}}</a>
+            </li>
             <li class=" font-extralight">┆</li>
-            <li><a class="hover:border-b border-red-400" href="#features">Features</a></li>
+            <li><a class="hover:border-b border-red-400"
+                href="#features">{{trans(key="features", lang=lang) | title}}</a></li>
             <li class=" font-extralight">┆</li>
-            <li><a class="hover:border-b border-red-400" href="#benefits">Benefits</a></li>
+            <li><a class="hover:border-b border-red-400"
+                href="#benefits">{{trans(key="benefits", lang=lang) | title}}</a></li>
             <li class=" font-extralight">┆</li>
             <li><a class="hover:border-b border-red-400" href="#faq">FAQ</a></li>
+            <li class="hidden md:block">
+              (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
+            </li>
           </ul>
         </nav>
       </div>
-      <img class="w-full border-t md:border border-[#020D2B]" src="bottle-light_v.webp">
+      <img class="w-full border-t md:border border-[#020D2B]" src="/bottle-light_v.webp">
     </header>
-    <article id="pitch" class="mt-8 mx-auto px-4 prose
+    <article id="about" class="mt-8 mx-auto px-4 prose
     prose-headings:font-playfair-display
     prose-h2:text-[#FB7B87]
     prose-h3:text-blue-400
@@ -58,7 +64,7 @@
     </article>
   </main>
   <footer class="mt-24 border-t border-[#020D2B]">
-    <div class="px-4 py-2 flex items-center max-w-prose mx-auto">
+    <div class="px-4 pt-2 pb-1 flex items-center max-w-prose mx-auto">
       <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-playfair-display font-semibold">
         <a href="https://r3ply.com">r<span class=" font-academy-engraved font-normal">3</span>ply<span
             class=" font-academy-engraved font-normal">.</span>
@@ -66,12 +72,28 @@
       </h1>
       <nav class="ml-auto">
         <ul class="flex overflow-clip gap-1 md:gap-4 list-none text-xs">
-          <li><a class="hover:border-b border-red-400" href="https://spenc.es/">About Me</a></li>
+          <li><a class="hover:border-b border-red-400"
+              href="https://spenc.es/">{{ trans(key="about_me", lang=lang) | title }}</a></li>
           <li class=" font-extralight">┆</li>
           <li><a class="hover:border-b border-red-400"
-              href="https://spenc.es/writing/email-as-a-commenting-system/#comments">r3ply Demo</a></li>
+              href="https://spenc.es/writing/email-as-a-commenting-system/#comments">{{ trans(key="r3ply_demo", lang=lang) }}</a>
+          </li>
         </ul>
       </nav>
+    </div>
+    <div>
+      <ul class="pb-2 flex justify-center items-center">
+        <li>(</li>
+        <li class="mr-2">{{ trans(key="languages", lang=lang) | title }}:</li>
+        <li class="text-2xl">
+          <a href="/?set-lang=en">🇬🇧</a>
+        </li>
+        <li class="font-extralight">┆</li>
+        <li class="text-2xl">
+          <a href="/it/?set-lang=it">🇮🇹</a>
+        </li>
+        <li>)</li>
+      </ul>
     </div>
   </footer>
 </body>

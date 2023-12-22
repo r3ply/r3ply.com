@@ -18,7 +18,7 @@ To see a demo of r3ply, and learn more about how it works, check out the [the po
 * Comments can be reviewed before they going live
 * Modular design means bring your own build (or backend)
 
-!["Screen recording of using r3ply"](screenrecording_md.webp "Your email client is probably a lot nicer for writing than the browser. For example, drafts are automatically saved and you can scroll through the article as you think abobut you're writing.")
+!["Screen recording of using r3ply"](/screenrecording_md.webp "Your email client is probably a lot nicer for writing than the browser. For example, drafts are automatically saved and you can scroll through the article as you think abobut you're writing.")
 
 ## Benefits:
 1. Everyone already has email!
