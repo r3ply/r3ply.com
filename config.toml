@@ -167,7 +167,7 @@ r3ply_demo = "r3ply Demo"
 [languages.it.translations]
 languages = "lingue"
 about = "info."
-features = "funzionalità"
+features = "funzioni"
 benefits = "vantaggi"
 about_me = "Su di me"
 r3ply_demo = "Demo di r3ply"
