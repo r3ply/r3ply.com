@@ -26,13 +26,18 @@
   {# Basic content #}
   <main class="max-w-prose mx-auto">
     <header class="">
-      <div class="mx-2 md:mx-0 flex items-center">
+      <div class="px-2 md:mx-0 flex items-center border-b md:border-0 border-[#020D2B]">
         <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-playfair-display font-semibold">
           <a href="/">r<span class=" font-academy-engraved font-normal">3</span>ply<span
               class=" font-academy-engraved font-normal">.</span>
           </a>
         </h1>
-        <nav class="ml-auto">
+        <nav class="ml-auto flex flex-col">
+          {# <ul class="ml-auto md:hidden">
+            <li>
+              (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
+            </li>
+          </ul> #}
           <ul class="flex overflow-clip gap-1 md:gap-4 list-none text-xs">
             <li><a class="hover:border-b border-red-400"
                 href='{{trans(key="about_href", lang=lang)}}'>{{trans(key="about", lang=lang) | title}}</a>
@@ -52,7 +57,14 @@
           </ul>
         </nav>
       </div>
-      <img class="w-full border-t md:border border-[#020D2B]" src="/bottle-light_v.webp">
+      <nav class="mt-1 flex">
+        <ul class="ml-auto md:hidden">
+          <li>
+            (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
+          </li>
+        </ul>
+      </nav>
+      <img class="w-full border-0 md:border border-[#020D2B]" src="/bottle-light_v.webp">
     </header>
     <article id="about" class="mt-8 mx-auto px-4 prose
     prose-headings:font-playfair-display
