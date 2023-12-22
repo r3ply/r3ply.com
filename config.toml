@@ -134,15 +134,40 @@ include_content = true
 # Accepted value "elasticlunr_javascript" or "elasticlunr_json"
 index_format = "elasticlunr_javascript"
 
+# You can put any kind of data here. The data
+# will be accessible in all templates
+# Example:
+#     [extra]
+#     author = "Famous author"
+#
+# author value will be available using {{ config.extra.author }} in templates
+#
+[extra]
+main_branch = "main"
+canonical_url = "https://r3ply.com"
+
+
 # Optional translation object for the default language
 # Example:
 #     default_language = "fr"
 #
 #     [translations]
 #     title = "Un titre"
+# Additional languages definition
+# You can define language specific config values and translations:
+# title, description, generate_feed, feed_filename, taxonomies, build_search_index
+# as well as its own search configuration and translations (see above for details on those)
+# For example
+# [languages.fr]
+# title = "Mon blog"
+# generate_feed = true
+# taxonomies = [
+#    {name = "auteurs"},
+#    {name = "tags"},
+# ]
+# build_search_index = false
 default_language = "en"
-
-[translations]
+[languages.en.translations]
 languages = "languages"
 about = "about"
 about_href = "#about"
@@ -155,20 +180,7 @@ faq_href = "#faq"
 about_me = "about me"
 r3ply_demo = "r3ply Demo"
 
-# Additional languages definition
-# You can define language specific config values and translations:
-# title, description, generate_feed, feed_filename, taxonomies, build_search_index
-# as well as its own search configuration and translations (see above for details on those)
 [languages]
-# For example
-# [languages.fr]
-# title = "Mon blog"
-# generate_feed = true
-# taxonomies = [
-#    {name = "auteurs"},
-#    {name = "tags"},
-# ]
-# build_search_index = false
 [languages.it.translations]
 languages = "lingue"
 about = "info."
@@ -181,16 +193,3 @@ faq = "FAQ"
 faq_href = "#domande-frequenti-faq"
 about_me = "Su di me"
 r3ply_demo = "Demo di r3ply"
-
-
-# You can put any kind of data here. The data
-# will be accessible in all templates
-# Example:
-#     [extra]
-#     author = "Famous author"
-#
-# author value will be available using {{ config.extra.author }} in templates
-#
-[extra]
-main_branch = "main"
-canonical_url = "https://r3ply.com"
