@@ -1,0 +1,22 @@
+{
+  "[markdown]": {
+    "editor.spellingLocales": [
+      "en-US",
+      "it"
+    ],
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
+  },
+  "spellright.language": [
+    "en",
+    "it"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ]
+}
