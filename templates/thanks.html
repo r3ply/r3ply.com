@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% include "head_preamble.html" %}
+
+  {# Change the '5' to the number of seconds you want to delay the redirect #}
+  <meta http-equiv="Refresh" content="100; URL=/" />
+
+  {# Set iphone notch background #}
+  <meta name="theme-color" content="#FDF2D4" />
+
+  {# Main CSS styling goes here, which is output by Tailwind #}
+  <link rel="stylesheet" type="text/css" href="/style.css">
+
+  {# title & description #}
+  <title>{{ page.title | default(value="TODO") }}</title>
+  <meta name="description" content="{{ page.description | default(value='TODO') }}">
+</head>
+
+<body class="bg-[#FDF2D4] text-[#111D3D]">
+  <main class="max-w-prose mx-auto">
+    <div class="px-2 md:mx-0 flex items-center border-b md:border-0 border-[#020D2B]">
+      <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-playfair-display font-semibold">
+        <a href="/">r<span class=" font-academy-engraved font-normal">3</span>ply<span
+            class=" font-academy-engraved font-normal">.</span>
+        </a>
+      </h1>
+      <nav class="ml-auto flex flex-col">
+        {# <ul class="ml-auto md:hidden">
+                      <li>
+                        (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
+                      </li>
+                    </ul> #}
+        <ul class="flex overflow-clip gap-1 md:gap-4 list-none text-xs">
+          <li><a class="hover:border-b border-red-400"
+              href='{{trans(key="about_href", lang=lang)}}'>{{trans(key="about", lang=lang) | title}}</a>
+          </li>
+          <li class=" font-extralight">┆</li>
+          <li><a class="hover:border-b border-red-400"
+              href='{{trans(key="features_href", lang=lang)}}'>{{trans(key="features", lang=lang) | title}}</a></li>
+          <li class=" font-extralight">┆</li>
+          <li><a class="hover:border-b border-red-400"
+              href='{{trans(key="benefits_href", lang=lang)}}'>{{trans(key="benefits", lang=lang) | title}}</a></li>
+          <li class=" font-extralight">┆</li>
+          <li><a class="hover:border-b border-red-400"
+              href='{{trans(key="faq_href", lang=lang)}}'>{{trans(key="faq", lang=lang) }}</a></li>
+          <li class="hidden md:block">
+            (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="p-2 prose-a:text-red-400 prose-a:underline">
+      {{ page.content | safe }}
+    </div>
+    <img src="/thank-you-placeholder.png" alt="Thank you placeholder"
+      class="w-full border-0 md:border border-[#020D2B]">
+  </main>
+</body>
+
+</html>

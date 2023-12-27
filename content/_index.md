@@ -12,7 +12,8 @@ I made r3ply because I wanted a commenting system for [my own website](https://s
 
 To see a demo of r3ply, and learn more about how it works, check out the [the post](https://spenc.es/writing/email-as-a-commenting-system/) where I introduce it.
 
-## Features:
+## Features
+
 * Users can submit comments to your site via email
 * Email addresses are automatically redacted before being published
 * Comments can be reviewed before they going live
@@ -20,7 +21,7 @@ To see a demo of r3ply, and learn more about how it works, check out the [the po
 
 !["Screen recording of using r3ply"](/screenrecording_md.webp "Your email client is probably a lot nicer for writing than the browser. For example, drafts are automatically saved and you can scroll through the article as you think abobut you're writing.")
 
-## Benefits:
+## Benefits
 1. Everyone already has email!
 2. Good balance between UX and moderating spam or offensive content
 3. Email gives you a lot of useful features for free:
@@ -32,7 +33,11 @@ To see a demo of r3ply, and learn more about how it works, check out the [the po
     * Users can scroll through content while they prepare their draft
     * And many more!
 
-## FAQ:
+## Waitlist
+
+{{ waitlist() }}
+
+## FAQ
 
 Currently I'm asking the internet for feedback to see if it's worth open sourcing. In the meanwhile, until there's documentation, I will add common questions/answers here.
 

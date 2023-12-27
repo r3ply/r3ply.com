@@ -11,8 +11,8 @@
 <!-- Facebook/Whatsapp OG Tags -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ domain ~ current_path }}">
-<meta property="og:title" content="{{ section.title }}">
-<meta property="og:description" content="{{ section.description }}">
+<meta property="og:title" content="{{ section.title | default(value=page.title) }}">
+<meta property="og:description" content="{{ section.description | default(value=page.description) }}">
 {% block meta_social_media_preview_img %} {# Note: Override this block if you need to #}
 <meta property="og:image" content="{{ domain ~ '/bottle_banner.jpg'}}">{# png/jpg < 300KB #}
 {% endblock meta_social_media_preview_img %}
@@ -24,8 +24,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:domain" content="r3ply.com">
 <meta property="twitter:url" content="{{ domain ~ current_path }}">
-<meta name="twitter:title" content="{{ section.title }}">
-<meta name="twitter:description" content="{{ section.description }}">
+<meta name="twitter:title" content="{{ section.title | default(value=page.title)  }}">
+<meta name="twitter:description" content="{{ section.description | default(value=page.description) }}">
 {% block twitter_social_media_preview_img %} {# Note: Override this block if you need to #}
 <meta property="og:image" content="{{ domain ~ '/bottle_banner.jpg'}}"> {# Note: < 300KB #}
 {% endblock twitter_social_media_preview_img %}

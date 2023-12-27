@@ -12,7 +12,8 @@ Ho creato r3ply perché volevo un sistema di commenti per [il mio sito web](http
 
 Per vedere una demo di r3ply e saperne di più su come funziona, controlla [il post](https://spenc.es/writing/email-as-a-commenting-system/) in cui lo presento.
 
-## Funzioni:
+## Funzioni
+
 * Gli utenti possono inviare commenti al tuo sito via email
 * Gli indirizzi email vengono automaticamente oscurati prima della pubblicazione
 * I commenti possono essere revisionati prima di essere pubblicati
@@ -20,7 +21,7 @@ Per vedere una demo di r3ply e saperne di più su come funziona, controlla [il p
 
 !["Registrazione dello schermo dell'utilizzo di r3ply"](/screenrecording_md.webp "Il tuo client email è probabilmente molto più comodo per scrivere rispetto al browser. Ad esempio, le bozze vengono salvate automaticamente e puoi scorrere l'articolo mentre pensi a ciò che stai scrivendo.")
 
-## Vantaggi:
+## Vantaggi
 1. Tutti hanno già una email!
 2. Un buon equilibrio tra UX e moderazione dello spam o dei contenuti offensivi
 3. La email offre molte funzionalità utili gratuitamente:
@@ -32,7 +33,12 @@ Per vedere una demo di r3ply e saperne di più su come funziona, controlla [il p
     * Gli utenti possono scorrere il contenuto mentre preparano la loro bozza
     * E molte altre!
 
-## Domande frequenti (FAQ):
+
+## Lista d'Attesa
+
+{{ waitlist() }}
+
+## Domande frequenti (FAQ)
 
 Attualmente sto chiedendo feedback su internet per capire se vale la pena renderlo open source. Nel frattempo, fino a quando non ci sarà una documentazione, aggiungerò domande/risposte comuni qui.
 
