@@ -39,7 +39,24 @@ Translations are set in [config.toml](/config.toml). The keys are used via the `
 
 ## Waitlist
 
-There's a Cloudflare D1 database that stores the information for the waitlist.
+There's a Cloudflare D1 database that stores the information for the waitlist. There are two tables:
+
+1. `waitlist` which holds the waitlist information
+2. `waitlist_error` which holds an errors that occurred in the process
+
+### Production dev
+
+The database and its tables should be provisioned. However, you can re-create them by running the following command (from the project root):
+
+```bash
+npx wrangler d1 execute r3ply --file functions/waitlist/create.sql
+```
+
+Additionally, you can query them by running the following command (and adjust as needed)
+
+```bash
+npx wrangler d1 execute r3ply --command "select email from waitlist"
+```
 
 ### Local dev
 

@@ -1,6 +1,7 @@
 # The following is needed for CF pages + D1 local development
+# [Cloudflare Docs](https://developers.cloudflare.com/d1/learning/local-development/)
 [[d1_databases]]
 binding = "R3PLY_DB"                                 # Should match preview_database_id
 database_name = "r3ply"
 database_id = "24e83108-b6d9-45b0-9744-4b53a4021511" # wrangler d1 info YOUR_DATABASE_NAME
-preview_database_id = "DB"                           # Required for Pages local development
+preview_database_id = "R3PLY_DB"                     # Required for Pages local development
