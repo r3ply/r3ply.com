@@ -36,7 +36,11 @@ Per vedere una demo di r3ply e saperne di più su come funziona, controlla [il p
 
 ## Lista d'Attesa
 
+r3ply non è ancora disponibile pubblicamente, ma se ti sembra interessante e desideri essere informato quando sarà disponibile, lascia il tuo indirizzo email nella lista d'attesa.
+
 {{ waitlist() }}
+
+{{ add(class='text-right', to='*(Prometto di non inviare spam o condividere il tuo indirizzo email)*')}}
 
 ## Domande frequenti (FAQ)
 

@@ -35,7 +35,12 @@ To see a demo of r3ply, and learn more about how it works, check out the [the po
 
 ## Waitlist
 
+r3ply isn't yet available publicly, but if it sounds interesting to you and you'd like to be notified when it becomes available then leave your email address on the waitlist.
+
 {{ waitlist() }}
+
+{{ add(class="text-right", to=`(*I promise I won't spam or share your email*)`)}}
+
 
 ## FAQ
 
