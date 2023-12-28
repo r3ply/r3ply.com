@@ -169,7 +169,7 @@ canonical_url = "https://r3ply.com"
 default_language = "en"
 [languages.en.translations]
 about = "about"
-about_href = "#about"
+about_href = "#a-commenting-system-as-simple-as-email"
 about_me = "about me"
 benefits = "benefits"
 benefits_href = "#benefits"
@@ -180,6 +180,7 @@ features_href = "#features"
 languages = "languages"
 r3ply_demo = "r3ply Demo"
 waitlist = "waitlist"
+waitlist_href = "#waitlist"
 
 [languages]
 [languages.it.translations]
@@ -195,3 +196,4 @@ features_href = "#funzioni"
 languages = "lingue"
 r3ply_demo = "Demo di r3ply"
 waitlist = "Lista d'Attesa"
+waitlist_href = "#lista-d-attesa"

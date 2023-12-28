@@ -35,16 +35,16 @@
                     (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
                   </li>
                 </ul> #}
-        <ul class="flex overflow-clip gap-1 md:gap-4 list-none text-xs">
+        <ul class="flex overflow-clip gap-0.5 md:gap-2 list-none text-xs">
           <li><a class="hover:border-b border-red-400"
-              href='{{trans(key="about_href", lang=lang)}}'>{{trans(key="about", lang=lang) | title}}</a>
+              href='{{trans(key="about_href", lang=lang)}}'>{{trans(key="about", lang=lang) | lower}}</a>
           </li>
           <li class=" font-extralight">┆</li>
           <li><a class="hover:border-b border-red-400"
-              href='{{trans(key="features_href", lang=lang)}}'>{{trans(key="features", lang=lang) | title}}</a></li>
+              href='{{trans(key="features_href", lang=lang)}}'>{{trans(key="features", lang=lang) | lower }}</a></li>
           <li class=" font-extralight">┆</li>
           <li><a class="hover:border-b border-red-400"
-              href='{{trans(key="benefits_href", lang=lang)}}'>{{trans(key="benefits", lang=lang) | title}}</a></li>
+              href='{{trans(key="waitlist_href", lang=lang)}}'>{{trans(key="waitlist", lang=lang) | lower }}</a></li>
           <li class=" font-extralight">┆</li>
           <li><a class="hover:border-b border-red-400"
               href='{{trans(key="faq_href", lang=lang)}}'>{{trans(key="faq", lang=lang) }}</a></li>
