@@ -7,7 +7,7 @@ module.exports = {
       'bottle-light_h': 'url("/bottle-light_h.webp")',
     },
     fontFamily: {
-      'playfair-display': ['Playfair Display', 'serif'],
+      'tiempo-headline-light': ['Tiempo Headline Light', 'serif'],
       'academy-engraved': ['Academy Engraved LET', 'serif'],
     },
   },
