@@ -46,16 +46,24 @@ There's a Cloudflare D1 database that stores the information for the waitlist. T
 
 ### Production dev
 
-The database and its tables should be provisioned. However, you can re-create them by running the following command (from the project root):
+There are two databases `r3ply` (for production) and `r3ply_staging` (for staging). Their tables should be already be provisioned, but you can re-create them by running the following command (from the project root):
 
 ```bash
+# in production:
 npx wrangler d1 execute r3ply --file functions/waitlist/create.sql
+
+# in staging
+npx wrangler d1 execute r3ply_staging --file functions/waitlist/create.sql
 ```
 
 Additionally, you can query them by running the following command (and adjust as needed)
 
 ```bash
+# in production
 npx wrangler d1 execute r3ply --command "select email from waitlist"
+
+# in staging
+npx wrangler d1 execute r3ply_staging --command "select email from waitlist"
 ```
 
 ### Local dev
