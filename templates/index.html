@@ -22,66 +22,71 @@
 </head>
 
 <body class="bg-[#FDF2D4] text-[#111D3D]">
-
-  {# Basic content #}
-  <main class="max-w-prose mx-auto">
-    <header class="">
-      <div class="px-2 md:mx-0 flex items-center border-b md:border-0 border-[#020D2B]">
-        <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-playfair-display font-semibold">
-          <a href="/">r<span class=" font-academy-engraved font-normal">3</span>ply<span
-              class=" font-academy-engraved font-normal">.</span>
-          </a>
-        </h1>
-        <nav class="ml-auto flex flex-col">
-          {# <ul class="ml-auto md:hidden">
-            <li>
-              (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
-            </li>
-          </ul> #}
-          <ul class="flex overflow-clip gap-1 md:gap-4 list-none text-xs">
-            <li><a class="hover:border-b border-red-400"
-                href='{{trans(key="about_href", lang=lang)}}'>{{trans(key="about", lang=lang) | title}}</a>
-            </li>
-            <li class=" font-extralight">┆</li>
-            <li><a class="hover:border-b border-red-400"
-                href='{{trans(key="features_href", lang=lang)}}'>{{trans(key="features", lang=lang) | title}}</a></li>
-            <li class=" font-extralight">┆</li>
-            <li><a class="hover:border-b border-red-400"
-                href='{{trans(key="benefits_href", lang=lang)}}'>{{trans(key="benefits", lang=lang) | title}}</a></li>
-            <li class=" font-extralight">┆</li>
-            <li><a class="hover:border-b border-red-400"
-                href='{{trans(key="faq_href", lang=lang)}}'>{{trans(key="faq", lang=lang) }}</a></li>
-            <li class="hidden md:block">
-              (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <nav class="mt-1 mr-2 flex">
-        <ul class="ml-auto md:hidden">
-          <li>
+  <header class="max-w-prose mx-auto">
+    <div class="px-2 md:mx-0 flex items-center border-b md:border-0 border-[#020D2B]">
+      <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-tiempo-headline-light font-semibold">
+        <a href="/">r<span class=" font-academy-engraved font-normal">3</span>ply<span
+            class="text-4xl lg:text-6xl font-academy-engraved font-normal align-baseline">:</span>
+        </a>
+      </h1>
+      <nav class="ml-auto flex flex-col">
+        {# <ul class="ml-auto md:hidden">
+                  <li>
+                    (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
+                  </li>
+                </ul> #}
+        <ul class="flex overflow-clip gap-0.5 md:gap-2 list-none text-xs">
+          <li><a class="hover:border-b border-red-400"
+              href='{{trans(key="about_href", lang=lang)}}'>{{trans(key="about", lang=lang) | lower}}</a>
+          </li>
+          <li class=" font-extralight">┆</li>
+          <li><a class="hover:border-b border-red-400"
+              href='{{trans(key="features_href", lang=lang)}}'>{{trans(key="features", lang=lang) | lower }}</a></li>
+          <li class=" font-extralight">┆</li>
+          <li><a class="hover:border-b border-red-400"
+              href='{{trans(key="waitlist_href", lang=lang)}}'>{{trans(key="waitlist", lang=lang) | lower }}</a></li>
+          <li class=" font-extralight">┆</li>
+          <li><a class="hover:border-b border-red-400"
+              href='{{trans(key="faq_href", lang=lang)}}'>{{trans(key="faq", lang=lang) }}</a></li>
+          <li class="hidden md:block">
             (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
           </li>
         </ul>
       </nav>
-      <img class="w-full border-0 md:border border-[#020D2B]" src="/bottle-light_v.webp">
-    </header>
-    <article id="about" class="mt-8 mx-auto px-4 prose
-    prose-headings:font-playfair-display
-    prose-h2:text-[#FB7B87]
-    prose-h3:text-blue-400
-    text-[#1E2D57]
-    leading-snug
+    </div>
+    <nav class="mt-1 mr-2 flex">
+      <ul class="ml-auto md:hidden">
+        <li>
+          (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  {# Basic content #}
+  <main class="max-w-prose mx-auto">
+
+    <article id="about">
+      <header>
+        <img class="w-full border-0 md:border border-[#020D2B]" src="/bottle-light_v.webp">
+      </header>
+      <section id="content" class="mt-8 mx-auto px-4 prose prose-lg
+    prose-headings:font-tiempo-headline-light
+    md:prose-h2:text-5xl prose-h2:text-[#FB7B87] md:prose-h2:mb-[0.67em]
+    md:prose-h3:text-4xl prose-h3:text-blue-400 md:prose-h3:mb-[0.5em]
+    prose-a:text-[#FB7B87] prose-a:font-bold
+    text-[#1E2D57] leading-snug
     prose-img:rounded-xl prose-img:border prose-img:border-[#020D2B]
-    ">
-      {{ section.content | safe }}
+    prose-ul:my-1.5 prose-li:my-1">
+        {{ section.content | safe }}
+      </section>
     </article>
   </main>
   <footer class="mt-24 border-t border-[#020D2B]">
     <div class="px-4 pt-2 pb-1 flex items-center max-w-prose mx-auto">
-      <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-playfair-display font-semibold">
+      <h1 class="text-3xl lg:text-5xl text-[#111D3D] font-tiempo-headline-light font-semibold">
         <a href="/">r<span class=" font-academy-engraved font-normal">3</span>ply<span
-            class=" font-academy-engraved font-normal">.</span>
+            class="text-4xl lg:text-6xl font-academy-engraved font-normal align-baseline">:</span>
         </a>
       </h1>
       <nav class="ml-auto">
@@ -93,7 +98,7 @@
               href="https://spenc.es/writing/email-as-a-commenting-system/#comments">{{ trans(key="r3ply_demo", lang=lang) }}</a>
           </li>
           <li>
-            - (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
+            (<a href="/?set-lang=en">🇬🇧</a>┆<a href="/it/?set-lang=it">🇮🇹</a>)
           </li>
         </ul>
       </nav>

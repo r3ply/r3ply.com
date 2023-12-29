@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS waitlist;
+DROP TABLE IF EXISTS waitlist_error;

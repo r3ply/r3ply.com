@@ -1,13 +1,23 @@
 {
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "build": "zola build $BUILD_OPTS && npx tailwindcss -i ./public/input.css -o ./public/style.css -m",
     "serve": "zola serve --interface 0.0.0.0 & npx tailwindcss -i ./public/input.css -o ./public/style.css --watch && wait",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx wrangler pages dev -- npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tables-drop": "npx wrangler d1 execute --local r3ply --file functions/waitlist/drop.sql",
+    "tables-create": "npx wrangler d1 execute --local r3ply --file functions/waitlist/create.sql",
+    "tables-reset": "npm run tables-drop && npm run tables-create",
+    "sql": "npx wrangler d1 execute r3ply --local --command"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.9",
-    "tailwindcss": "^3.3.2"
+    "better-sqlite3": "^8.0.1",
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.22.1"
   }
 }
