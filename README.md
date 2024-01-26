@@ -1,12 +1,8 @@
 # r3ply.com
 
-This is the website for the r3ply commenting system.
+This is the website for the [r3ply](https://r3ply.com) commenting system. For more information about r3ply, please visit the website.
 
 ## Usage
-
-Start by visiting the [project's GitHub repository](https://github.com/asimpletune/zola-tailwindcss), and then click use the template and "create a new repository".
-
-![Create a new repository](https://zola-tailwind.spenc.es/screenshot.png)
 
 Here's how you do stuff:
 
