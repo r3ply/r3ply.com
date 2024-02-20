@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "build": "zola build $BUILD_OPTS && npx tailwindcss -i ./public/input.css -o ./public/style.css -m",
     "serve": "zola serve --interface 0.0.0.0 & npx tailwindcss -i ./public/input.css -o ./public/style.css --watch && wait",
